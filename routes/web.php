@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\listingController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
 
 
 Route::get('/', function () {
@@ -11,6 +13,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home/task',function(){
-    return view('test');
-});
+Route::resource('/home/list',listingController::class);

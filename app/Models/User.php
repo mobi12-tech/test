@@ -31,6 +31,10 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+    public function listings()
+    {
+        return $this->hasMany(Listing::class);
+    }
 
     /**
      * Get the attributes that should be cast.
