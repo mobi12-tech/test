@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header d-flex justify-content-between">{{ __('Dashboard') }}<a class="btn btn-primary" href={{ url('home/list') }}>
+                    <div class="card-header d-flex justify-content-between">{{ __('Dashboard') }}<a class="btn btn-primary" href={{ url('home/list/create') }}>
                             New</a></div>
 
                     <div class="card-body">

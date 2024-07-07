@@ -11,7 +11,7 @@ class listingController extends Controller
      */
     public function index()
     {
-        return view('listing');
+        //return view('listing');
     }
 
     /**
@@ -19,7 +19,8 @@ class listingController extends Controller
      */
     public function create(Request $req)
     {
-        dd($req);
+        return view('listing');
+        
     }
 
     /**
@@ -27,7 +28,7 @@ class listingController extends Controller
      */
     public function store(Request $request)
     {
-     dd($request);
+     dd($request->post());
     }
 
     /**
@@ -51,7 +52,7 @@ class listingController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        dd($request);
     }
 
     /**

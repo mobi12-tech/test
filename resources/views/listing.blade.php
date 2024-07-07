@@ -7,8 +7,8 @@
                 <!-- Very little is needed to make a happy life. - Marcus Aurelius -->
 
                 <h1 class="row justify-content-center">Create New Listing</h1>
-                <form method="GET"
-                    action="{{ url('/home/list/create') }}">
+                <form method="POST"
+                    action="{{ url('/home/list') }}">
                     @csrf
                     <div class="form-grouprow">
                     <label for="inputName" class="col-sm-2 col-form-label">Name</label>
